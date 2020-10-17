@@ -1,0 +1,144 @@
+.mainSection {
+    background: #f2f2f2;
+    min-height: calc(100vh - 100px);
+    padding: 20px 0;
+    .outerWrapper {
+        max-width: 100%;
+        padding: 0 15px;
+        width: 100%;
+        margin: 0 auto;
+        @media only screen and (min-width: 1200px) {
+            max-width: 990px;
+        }
+        @media only screen and (min-width:1366px) {
+            max-width: 1300px;
+        }
+        @media only screen and (min-width: 1500px) {
+            max-width: 1440px;
+        }
+        .topHeader {
+            h1 {
+                margin: 0 0 10px;
+                font-size: 24px;
+                line-height: normal;
+            }
+        }
+        .innerContent {
+            flex-wrap: wrap;
+            .sideFilter {
+                flex: 0 0 100%;
+                max-width: 100%;
+                background: #fff;
+                padding: 15px;
+                border-radius: 4px;
+                margin-right: 20px;
+                @media only screen and (min-width: 701px) {
+                    flex: 0 0 31%;
+                    max-width: 31%;
+                }
+                @media only screen and (min-width: 1023px) {
+                    flex: 0 0 24%;
+                    max-width: 24%;
+                }
+                h2 {
+                    font-size: 18px;
+                    margin: 0;
+                    line-height: normal;
+                }
+                .title {
+                    text-align: center;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin: 0;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        background: #d3ced0;
+                        width: 190px;
+                        position: absolute;
+                        height: 1px;
+                        bottom: 0;
+                        left: 50%;
+                        margin-left: -90px;
+                    }
+                }
+                ul {
+                    flex-wrap: wrap;
+                    li {
+                        flex: 0 0 46%;
+                        list-style: none;
+                        a {
+                            background: #c5e09b;
+                            display: block;
+                            text-align: center;
+                            margin: 0 0 10px;
+                            border-radius: 4px;
+                            padding: 5px;
+                            color: #000;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .contentSection {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 15px 0 0;
+                @media only screen and (min-width: 701px) {
+                    flex: 0 0 66%;
+                    max-width: 66%;
+                    margin: 0 0;
+                }
+                @media only screen and (min-width: 1023px) {
+                    flex: 0 0 72%;
+                    max-width: 72%;
+                }
+                ul {
+                    justify-content: space-between;
+                    li {
+                        list-style: none;
+                        flex: 0 0 100%;
+                        margin: 0 0 20px;
+                        max-width: 100%;
+                        @media only screen and (min-width: 701px) {
+                            flex: 0 0 48%;
+                            max-width: 48%;
+                        }
+                        @media only screen and (min-width: 1025px) {
+                            flex: 0 0 23%;
+                            max-width: 23%;
+                        }
+                        .cardDiv {
+                            background: #fff;
+                            padding: 15px;
+                            border-radius: 4px;
+                            height: 100%;
+                            .cardImage {
+                                width: 100%;
+                                background: #f2f2f2;
+                            }
+                            h3 {
+                                font-size: 20px;
+                                line-height: normal;
+                                font-weight: 600;
+                                color: #3e4a93;
+                                margin: 10px 0 0;
+                            }
+                            h4 {
+                                font-size: 18px;
+                                line-height: normal;
+                                margin: 0 0 5px;
+                                font-weight: 500;
+                                color: #000;
+                                span {
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

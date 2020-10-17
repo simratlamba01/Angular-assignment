@@ -1,0 +1,97 @@
+<section class="mainSection">
+    <div class="outerWrapper">
+        <div class="topHeader">
+            <h1>SpaceX Launch Program</h1>
+        </div>
+        <div class="innerContent d-flex">
+            <div class="sideFilter">
+                <h2>Filters</h2>
+                <p class="title">Launch Year</p>
+                <ul class="d-flex justify-content-between pl-0">
+                    <li>
+                        <a href="javascript:void();" title="2006">2006</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2007">2007</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2008">2008</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2009">2009</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2010">2010</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2011">2011</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2012">2012</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2014">2014</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2015">2015</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2016">2016</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2017">2017</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2018">2018</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2019">2019</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="2020">2020</a>
+                    </li>
+                </ul>
+                <p class="title">Successful Launch</p>
+                <ul class="d-flex justify-content-between pl-0">
+                    <li>
+                        <a href="javascript:void();" title="True">True</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="False">False</a>
+                    </li>
+                </ul>
+                <p class="title">Successful Landing</p>
+                <ul class="d-flex justify-content-between pl-0">
+                    <li>
+                        <a href="javascript:void();" title="True">True</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void();" title="False">False</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentSection">
+                <ul class="d-flex pl-0 m-0 flex-wrap">
+                    <li *ngFor="let e of missionList;">
+                        <div class="cardDiv">
+                            <div class="cardImage d-flex justify-content-center align-items-center">
+                                <img src="{{e.links.mission_patch_small}}" alt="Mission Image">
+                            </div>
+                            <div class="cardBody">
+                                <h3>{{ e.mission_name }} #<span>{{ e.flight_number }}</span></h3>
+                                <div class="contentInner">
+                                    <h4>Misson Id: <span>{{e.mission_id}}</span></h4>
+                                    <h4>Launch Year: <span>{{e.launch_year}}</span></h4>
+                                    <h4>
+                                        Success Launch: <span>{{e.launch_success}}</span>
+                                    </h4>
+                                    <h4>Successful Landing: <span>Landing Launch</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
